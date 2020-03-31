@@ -36,7 +36,7 @@
     <a href="https://github.com/DickensJuma/Responsive-Web-Development"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://raw.githack.com/DickensJuma/Responsive-Web-Development/master/index.html">View Demo</a>
+    <a href="https://raw.githack.com/DickensJuma/Responsive-Web-Development/feature/index.html">View Demo</a>
     ·
     <a href="https://github.com/DickensJuma/Responsive-Web-Development/issues">Report Bug</a>
     ·
