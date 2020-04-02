@@ -145,6 +145,7 @@ nav li {
   display: flex;
   height: 528px;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .main-cover {
@@ -196,7 +197,7 @@ nav li {
 
 .section1 {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "section1-title section1-title section1-title section1-title"
     "box1 box2 box3 box4"
     "box5 box6 box7 box8";
@@ -272,4 +273,49 @@ h1 {
   font-weight: 300;
   margin: 5px 0;
   cursor: pointer;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #555555;
+}
+.main-footer {
+  height: 161px;
+  display: flex;
+  flex-direction: column;
+}
+.main-footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-footer li {
+  width: 100px;
+  height: 50px;
+  background-color: #8cacea;
+  margin: 5px;
+}
+.main-footer-list a {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.last-footer img {
+  height: 30px;
+  width: 35px;
+}
+.last-footer {
+  height: 20px;
+  width: 22px;
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
