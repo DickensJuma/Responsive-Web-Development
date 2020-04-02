@@ -11,9 +11,29 @@ body {
   color: #555;
 }
 
-nav {
+/* nav {
   height: 48px;
   display: flex;
+} */
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.black-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  padding: 6px 6px 6px 10px;
+  font-size: 13px;
 }
 
 .logo {
@@ -38,7 +58,7 @@ nav {
   padding-top: 8px;
 }
 
-.nav_items {
+.white-nav {
   height: 48px;
   width: 100%;
   display: flex;
