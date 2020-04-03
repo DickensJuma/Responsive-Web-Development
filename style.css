@@ -9,6 +9,7 @@
 body {
   min-height: 100vh;
   color: #555;
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
 }
 
 /* nav {
@@ -142,17 +143,18 @@ nav li {
 }
 
 .cover-page {
-  display: flex;
-  height: 528px;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(242px, 1fr));
+  grid-template-rows: repeat(2, 268px);
+  gap: 10px;
 }
 
 .main-cover {
   height: 100%;
   background: rgba(0, 0, 0, 0.25) url("./images/gradient-image.png") no-repeat;
   background-size: 100% 100%;
-  width: 919px;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
 }
 
 .main-cover > h1 {
@@ -174,7 +176,6 @@ nav li {
 .play {
   background: rgba(19, 71, 71, 0.25) url(./images/image-gradient.png) no-repeat;
   background-size: 100% 100%;
-  height: 260px;
 }
 
 .play h2,
@@ -192,7 +193,19 @@ nav li {
 .gear {
   background: center url(./images/play.png) no-repeat;
   background-size: 100% 100%;
-  height: 260px;
+}
+
+@media only screen and (max-width: 768px) {
+  section#cover-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 233px;
+  }
+  .latest-deals {
+    display: grid;
+    grid-template-rows: repeat(4, minmax(200px));
+  
+  }
 }
 
 .section1 {
@@ -275,47 +288,180 @@ h1 {
   cursor: pointer;
 }
 
-footer {
-  display: block;
-  text-align: center;
-  width: 100%;
-  background-color: #555555;
+.section2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(50px, auto);
+  justify-content: center;
+  gap: 20px;
+  padding: 0 100px 80px 100px;
+  grid-template-areas:
+    "section2-title section2-title section2-options section2-options"
+    "section2-box1 section2-box2 section2-box3 section2-box4";
+}
+
+.section2-title {
+  grid-area: section2-title;
+  color: #f42;
+  font-size: 25px;
+  align-self: flex-end;
+  font-weight: 700;
+}
+
+.section2-title:hover {
+  color: #000;
+}
+
+.section2-options a:hover {
+  color: #000;
+}
+
+.section2-options {
+  grid-area: section2-options;
+  display: flex;
+  align-self: flex-end;
+  justify-self: self-end;
+}
+
+.section2-options a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #f42;
+}
+
+.section2-box1 {
+  grid-area: section2-box1;
+}
+
+.section2-box2 {
+  grid-area: section2-box2;
+}
+
+.section2-box3 {
+  grid-area: section2-box3;
+}
+
+.section2-box4 {
+  grid-area: section2-box4;
 }
 .main-footer {
-  height: 161px;
   display: flex;
   flex-direction: column;
+  background-color: #131313;
+  height: 80%;
+  width: 100%;
 }
-.main-footer ul {
+.social-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  height: 50%;
+  /* width: 31.2em; */
+  color: #fff;
+  align-self: center;
+  margin-top: 20px;
 }
-.main-footer li {
-  width: 100px;
-  height: 50px;
-  background-color: #8cacea;
-  margin: 5px;
-}
-.main-footer-list a {
+.bottom-social-list {
   display: flex;
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* padding-right: 30px; */
+  width: 25em;
+  align-self: center;
+}
+
+.social-list > li > a,
+.bottom-social-list > li > a {
   list-style: none;
+  color: #ffff;
+  text-decoration: none;
+}
+.social-list li {
+  margin-left: 10px;
+}
+.last-footer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: #000;
+  height: 6.2em;
+  color: #fff;
+}
+.last-footer img {
+  margin-top: 30px;
+  width: 30px;
+}
+
+.last-footer a,
+i {
+  text-decoration: none;
   color: #fff;
 }
 
-.last-footer img {
-  height: 30px;
-  width: 35px;
-}
-.last-footer {
-  height: 20px;
-  width: 22px;
-  background-color: #000;
+.bottom-social-list > li > a {
+  font-family: "Shantox" sans-serif;
+  font-size: 13px;
+  line-height: 24px;
   color: #fff;
-  height: 80px;
-  width: 100%;
-  align-items: center;
+}
+.social-list > li > a > i {
+  height: 16px;
+  width: 16px;
+}
+.circle-icon {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #555;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+.fa-heart {
+  color: red;
+}
+
+.latest-deals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  margin: 50px;
+}
+
+
+.latest-deals {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px));
+
+}
+.deal {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.deal img {
+  background-position: 0 100%;
+  height: 195px;
+  width: 14.2em;
+}
+
+.deal p {
+  font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #000;
+}
+
+.deal p:hover {
+  color: #ff4422;
+  text-decoration: underline;
 }
