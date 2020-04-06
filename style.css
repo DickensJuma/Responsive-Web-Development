@@ -226,7 +226,7 @@ nav .fas {
     "box5 box6 box7 box8";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: minmax(150px, auto);
-  padding: 10px;
+  padding: 5px;
   justify-content: center;
   gap: 25px;
 }
@@ -444,6 +444,14 @@ h1 {
   grid-area: section3-box8;
 }
 
+.section3 h2:hover {
+  color: #000;
+}
+
+.fas:hover {
+  color: #000;
+}
+
 .main-footer {
   display: flex;
   flex-direction: column;
@@ -535,6 +543,8 @@ i {
 .fa-angle-right {
   color: red;
 }
+
+
 
 .latest-deals {
   display: grid;
@@ -895,12 +905,11 @@ i {
   }
   
   .latest-deals-header a {
-    margin-left: 100px;
-    color: #ff4422;
-    font-family: "Avalon", sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 32px;
+    font-size: 30px;
+    justify-self: flex-start;
+    font-weight: 800;
+    color: #f42;
+    letter-spacing: -0.1rem;
     text-decoration: none;
   }
   
