@@ -43,6 +43,10 @@ nav li {
   font-size: 13px;
 }
 
+.black-nav ul li:hover {
+  color: #555;
+}
+
 .logo {
   background-color: #f42;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
@@ -241,6 +245,7 @@ nav .fas {
 
 .section1-title:hover {
   color: #000;
+  cursor: pointer;
 }
 
 h1 {
@@ -329,6 +334,7 @@ h1 {
 
 .section2-title:hover {
   color: #000;
+  cursor: pointer;
 }
 
 .section2-options a:hover {
