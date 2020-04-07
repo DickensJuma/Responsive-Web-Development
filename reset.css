@@ -140,8 +140,8 @@ table {
   box-sizing: border-box;
 }
 
-/* ::before,
+::before,
 ::after {
   text-decoration: inherit;
   vertical-align: inherit;
-} */
+}

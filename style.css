@@ -62,14 +62,6 @@ nav li {
   color: #555;
 }
 
-.logo > a {
-  /* background-color: #f42; */
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
-  display: block;
-  height: 35px;
-  width: 70px;
-}
-
 .section3 img {
   margin-bottom: 10px;
 }
@@ -81,10 +73,6 @@ nav li {
 
 .last-footer img {
   width: 30px;
-}
-
-.logo a img {
-  padding-top: 8px;
 }
 
 .link_item {
@@ -130,17 +118,28 @@ i {
   font-family: sans-serif;
 }
 
-.logo svg {
-  width: 60px;
-  overflow: hidden;
-  height: 50px;
-}
-
 .white-nav {
   height: 68px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  margin: 0;
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  width: 100px;
+  height: 50px;
+}
+
+.logo svg {
+  width: 66px;
 }
 
 .left_links {
@@ -694,6 +693,11 @@ nav .fas {
     display: none;
   }
 
+  .logo {
+    height: 55px;
+    margin-top: 2px;
+  }
+
   .main-cover > h1 {
     font-size: 36px;
     line-height: 36px;
@@ -725,11 +729,11 @@ nav .fas {
     justify-content: center;
   }
 
-  /* .section1-grid1 {
+  .section1-grid1 {
     grid-area: box1;
     display: flex;
     justify-content: flex-start;
-  } */
+  }
 
   .section1-grid2 {
     grid-area: box2;
