@@ -131,9 +131,7 @@ i {
   align-items: center;
   float: left;
   margin: 0;
-  background-size: 100px;
-  background-repeat: no-repeat;
-  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  background: linear-gradient(to bottom right, #c09, #f42 85%) no-repeat 100px;
   width: 100px;
   height: 50px;
 }
@@ -714,22 +712,6 @@ nav .fas {
     display: flex;
     flex-direction: column;
     row-gap: 2em;
-  }
-
-  .section1-grid1 {
-    display: grid;
-    grid-template-areas:
-      "box1"
-      "box2"
-      "box3"
-      "box4"
-      "box5"
-      "box6"
-      "box7"
-      "box8";
-    grid-template-columns: 1fr;
-    grid-template-rows: minmax(80px, auto);
-    justify-content: center;
   }
 
   .section1-grid1 {

@@ -138,10 +138,7 @@ table {
 ::before,
 ::after {
   box-sizing: border-box;
-}
-
-::before,
-::after {
   text-decoration: inherit;
   vertical-align: inherit;
 }
+
