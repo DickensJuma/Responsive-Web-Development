@@ -191,6 +191,7 @@ nav .fas {
   grid-template-columns: repeat(3, minmax(242px, 1fr));
   grid-template-rows: repeat(2, 268px);
   gap: 10px;
+  margin: 40px 5px;
 }
 
 .main-cover {
@@ -243,7 +244,7 @@ nav .fas {
 .section1 {
   display: grid;
   grid-template-areas:
-    "section1-title section1-title section1-title section1-title"
+    /* "section1-title section1-title section1-title section1-title" */
     "box1 box2 box3 box4"
     "box5 box6 box7 box8";
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -259,7 +260,7 @@ nav .fas {
 }
 
 .section1-title {
-  grid-area: section1-title;
+  /* grid-area: section1-title; */
   font-size: 30px;
   align-self: flex-end;
   font-weight: 700;
@@ -491,7 +492,7 @@ h1 {
   .section1 {
     display: grid;
     grid-template-areas:
-      "section1-title section1-title  section1-title"
+      /* "section1-title section1-title" */
       "box1 box2 box3"
       "box4 box5 box6"
       "box7 box8 .";
@@ -647,7 +648,7 @@ h1 {
   .section1-grid1 {
     display: grid;
     grid-template-areas:
-      "section1-title"
+      /* "section1-title" */
       "box1"
       "box2"
       "box3"
@@ -778,7 +779,6 @@ h1 {
 }
 
 @media (min-width: 1024px) {
- 
   .section1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -920,10 +920,13 @@ i {
   color: #000;
 }
 
-.deals-info > h3 {
+.deals-info .price > h3:first-child {
   text-decoration: line-through;
+  padding-right: 20px;
 }
-
+.price {
+  display: flex;
+}
 .deal p:hover {
   color: #ff4422;
   text-decoration: underline;
