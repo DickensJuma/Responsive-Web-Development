@@ -499,6 +499,15 @@ nav .fas {
   color: red;
 }
 
+.latest-deals-header a {
+  font-size: 30px;
+  justify-self: flex-start;
+  font-weight: 800;
+  color: #f42;
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
+
 .latest-deals {
   display: grid;
   grid-template-columns: repeat(4, minmax(230px, 1fr));
