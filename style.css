@@ -356,14 +356,6 @@ nav .fas {
   cursor: pointer;
 }
 
-.bottom-social-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 25em;
-  align-self: center;
-}
-
 .latest-deals-header a {
   font-size: 30px;
   justify-self: flex-start;
@@ -371,6 +363,14 @@ nav .fas {
   color: #f42;
   letter-spacing: -0.1rem;
   text-decoration: none;
+}
+
+.bottom-social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25em;
+  align-self: center;
 }
 
 .bottom-social-list > ul {
