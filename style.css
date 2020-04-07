@@ -233,6 +233,15 @@ nav .fas {
   color: #f42;
 }
 
+.latest-deals-header a {
+  font-size: 30px;
+  justify-self: flex-start;
+  font-weight: 800;
+  color: #f42;
+  letter-spacing: -0.1rem;
+  text-decoration: none;
+}
+
 .bottom-social-list > li > a {
   list-style: none;
   color: #ffff;
@@ -354,15 +363,6 @@ nav .fas {
 .section2-title:hover {
   color: #000;
   cursor: pointer;
-}
-
-.latest-deals-header a {
-  font-size: 30px;
-  justify-self: flex-start;
-  font-weight: 800;
-  color: #f42;
-  letter-spacing: -0.1rem;
-  text-decoration: none;
 }
 
 .bottom-social-list {
