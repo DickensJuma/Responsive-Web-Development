@@ -124,9 +124,6 @@ nav li {
   display: none;
 }
 
-
-
-
 .black-nav ul {
   font-size: 14px;
   font-family: sans-serif;
@@ -469,13 +466,12 @@ h1 {
 }
 
 @media screen and (max-width: 1023px) and (min-width: 768px) {
-  .logo {
+  /* .logo {
     height: 82px;
     margin-top: -30px;
-  }
+  } */
 
-  .logo svg{
-
+  .logo svg {
   }
 
   .left_links {
@@ -562,7 +558,7 @@ h1 {
 @media screen and (min-width: 768px) {
   nav {
     position: sticky;
-    top: -32px;
+    /* top: -32px; */
   }
 
   .black-nav {
@@ -601,13 +597,6 @@ h1 {
   .fa-bars {
     display: none;
   }
-
-  /* .section1 {
-    display: flex;
-    flex-direction: column;
-
-   
-  } */
 }
 
 @media only screen and (max-width: 768px) {
@@ -632,7 +621,6 @@ h1 {
     grid-column: 1 / span 1;
   }
 
-  .white-nav,
   .black-nav {
     display: none;
   }
@@ -790,15 +778,7 @@ h1 {
 }
 
 @media (min-width: 1024px) {
-  /* .logo {
-    display: none;
-  } */
-
-  /* main {
-    position: relative;
-    top: 135px;
-  } */
-
+ 
   .section1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
