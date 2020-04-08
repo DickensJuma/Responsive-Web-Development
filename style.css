@@ -22,11 +22,8 @@ header {
 
 article {
   margin-bottom: 1%;
+  padding-top: 135px;
 }
-
-/* main {
-  padding-top: 200px;
-} */
 
 nav ul {
   display: flex;
@@ -230,7 +227,7 @@ nav .fas {
 } */
 
 .cover-page {
-  margin: 0 8px;
+  margin: 0 8px 0 8px;
   padding-top: 95px;
 }
 
@@ -242,7 +239,7 @@ nav .fas {
 
 .cover-page .col1 {
   position: relative;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/kayleighmcenany-796x419.jpg");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/supermassive_header-796x417.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -261,8 +258,8 @@ nav .fas {
 }
 
 .col1 h2 {
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .cover h3 {
@@ -281,7 +278,7 @@ nav .fas {
   position: relative;
   margin: 0;
   color: gray;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: lighter;
   letter-spacing: 1.5px;
   height: 1em;
@@ -290,7 +287,10 @@ nav .fas {
 .details p {
   position: relative;
   top: 15px;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  margin-left: 6px;
+  padding-top: 30px;
 }
 
 .cover p {
@@ -807,20 +807,25 @@ nav .fas {
 
   .col1 .details {
     width: 90%;
+    padding: 10px;
   }
 
-  .col1 h2 {
-    font-size: 20px;
-    font-weight: lighter;
+  .col1 .details h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
   .col1 h3 {
-    font-size: 45px;
-    line-height: 1em;
+    font-size: 28px;
+    line-height: 1.5;
   }
 
   .col1 .details p {
     top: 45px;
+    font-size: 10px;
   }
 
   .col1 p {
@@ -835,12 +840,12 @@ nav .fas {
 
   .col2 .details {
     width: 98%;
-    font-size: 15px;
     top: 40%;
   }
 
   .col2 .details h3 {
     line-height: 0.8em;
+    font-size: 70px;
   }
 
   .col2 .details p {
@@ -1058,7 +1063,7 @@ nav .fas {
   }
 
   .col1 h3 {
-    font-size: 70px;
+    font-size: 56px;
     line-height: 0.8em;
   }
 
@@ -1074,7 +1079,7 @@ nav .fas {
     margin: 14px 0 0 14px;
     z-index: 95;
   }
-  
+
   .cover-layer {
     width: 100%;
     height: 100%;
