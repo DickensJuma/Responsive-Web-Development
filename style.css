@@ -21,7 +21,7 @@ header {
 }
 
 main {
-  padding-top: 135px;
+  padding-top: 80px;
 }
 
 nav ul {
@@ -29,7 +29,8 @@ nav ul {
   flex-wrap: wrap;
 }
 
-nav li {
+.black-nav li,
+.left_links li {
   margin: 0 10px;
   cursor: pointer;
 }
@@ -119,10 +120,16 @@ i {
 }
 
 .white-nav {
-  height: 68px;
+  height: 50px;
   width: 100%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+.right_links li {
+  border-left: 1px #e7e7e7 solid;
+  border-right: 1px #e7e7e7 solid;
 }
 
 .logo {
@@ -140,20 +147,14 @@ i {
   width: 66px;
 }
 
-.left_links {
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
 nav .fas {
-  padding: 15px;
   font-size: 20px;
+  padding: 14px;
+  letter-spacing: initial;
 }
 
 .fa-search {
   color: #aaa;
-  border: 0.1px #e7e7e7 solid;
   transform: rotate(90deg);
 }
 
@@ -675,6 +676,10 @@ nav .fas {
 
   .fa-bars {
     display: none;
+  }
+
+  .fa-search {
+    margin-left: auto;
   }
 }
 
