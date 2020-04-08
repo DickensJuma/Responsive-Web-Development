@@ -171,61 +171,6 @@ nav .fas {
   cursor: pointer;
 }
 
-/* .cover-page {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(242px, 1fr));
-  grid-template-rows: repeat(2, 268px);
-  gap: 10px;
-  margin: 40px 5px;
-}
-
-.main-cover {
-  height: 100%;
-  background: rgba(0, 0, 0, 0.25) url("./images/gradient-image.png") no-repeat;
-  background-size: 100% 100%;
-  grid-column: 1 / span 2;
-  grid-row: 1 / span 2;
-} */
-
-/* .main-cover > h1 {
-  font-family: "Signika", sans-serif;
-  font-size: 56px;
-  line-height: 56px;
-  color: #fff;
-  margin: 300px 30px;
-  height: 181px;
-  width: 810px;
-}
-
-.sub-cover {
-  display: flex;
-  flex-direction: column;
-  width: 485px;
-  justify-content: space-between;
-}
-
-.play {
-  background: rgba(19, 71, 71, 0.25) url(./images/image-gradient.png) no-repeat;
-  background-size: 100% 100%;
-}
-
-.play h2,
-.gear > h2 {
-  font-family: "Signika", sans-serif;
-  font-size: 28px;
-  line-height: 31px;
-  color: #fff;
-  margin: 150px 20px;
-  width: 423px;
-  height: 90px;
-  word-spacing: 2px;
-}
-
-.gear {
-  background: center url(./images/play.png) no-repeat;
-  background-size: 100% 100%;
-} */
-
 .cover-page {
   margin: 0 8px 0 8px;
   padding-top: 95px;
@@ -270,8 +215,11 @@ nav .fas {
 .cover h3 {
   padding: 0;
   margin: 0;
-  line-height: 1.1em;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
   height: 1.1em;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 .col1 p {
@@ -309,7 +257,7 @@ nav .fas {
 
 .col2 {
   position: relative;
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/04/psychedelic-796x419.png");
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/02/TNW-Conference-PanelImg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -791,7 +739,7 @@ nav .fas {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 400px;
+    height: 500px;
     padding-top: 0;
     gap: 0.6%;
   }
@@ -815,16 +763,18 @@ nav .fas {
     font-weight: 500;
     letter-spacing: 0.04em;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
   }
 
-  .col1 h3 {
-    font-size: 28px;
-    line-height: 1.5;
+  .col1 .details h3 {
+    font-size: 50px;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    font-weight: 800;
   }
 
   .col1 .details p {
-    top: 45px;
+    top: 100px;
     font-size: 10px;
   }
 
@@ -832,6 +782,7 @@ nav .fas {
     color: gray;
     font-size: 18px;
     font-weight: lighter;
+    margin: 10px;
   }
 
   .cover-page .col1 svg {
@@ -1088,9 +1039,29 @@ nav .fas {
     background-repeat: no-repeat;
   }
 
+  .col2 .details {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .col2 .details h2 {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
   .col2 .details h3 {
-    font-size: 30px;
-    line-height: .8em;
+    font-size: 25px;
+    line-height: 0.9em;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .col2 .details p {
+    top: 20px;
+    font-size: 10px;
   }
 }
 
