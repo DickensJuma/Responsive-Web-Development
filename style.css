@@ -638,7 +638,7 @@ b {
   margin-left: 2px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .deals-info,
   .off {
     display: block;
