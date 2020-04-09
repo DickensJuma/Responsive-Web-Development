@@ -21,6 +21,10 @@ article {
   margin-bottom: 1%;
 }
 
+h6 {
+  display: none;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;
