@@ -27,6 +27,24 @@ h6 {
   display: none;
 }
 
+nav ul li {
+  color: #a7a7a7;
+}
+
+.social-list li {
+  margin: 0 10px;
+}
+
+.bottom-social-list li {
+  margin: 0 5px;
+  font-family: Shentox, sans-serif;
+}
+
+.right_links li {
+  border-left: 1px #e7e7e7 solid;
+  border-right: 1px #e7e7e7 solid;
+}
+
 .black-nav li {
   margin: 0 10px;
   cursor: pointer;
@@ -34,22 +52,18 @@ h6 {
   color: gray;
 }
 
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  color: #a7a7a7;
+.left_links li {
+  margin: 0 1px;
+  cursor: pointer;
 }
 
 nav ul li:hover {
   cursor: pointer;
 }
 
-.left_links li {
-  margin: 0 1px;
-  cursor: pointer;
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .black-nav {
@@ -124,11 +138,6 @@ nav ul li:hover {
   color: #000;
 }
 
-.right_links li {
-  border-left: 1px #e7e7e7 solid;
-  border-right: 1px #e7e7e7 solid;
-}
-
 nav .fas {
   font-size: 20px;
   padding: 13px;
@@ -152,6 +161,15 @@ nav .fas {
 }
 
 @media only screen and (max-width: 768px) {
+  .latest-list li {
+    color: #131313;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #eee;
+    padding: 6px 0 6px 14px;
+    width: fit-content;
+  }
+
   .cover-page {
     display: grid;
     grid-template-columns: 1fr;
@@ -168,6 +186,10 @@ nav .fas {
   background-position: center;
 }
 
+.details {
+  padding-left: 5px;
+}
+
 .cover-page .details {
   color: #fff;
   font-family: "Teko", sans-serif;
@@ -175,10 +197,6 @@ nav .fas {
   bottom: 0;
   height: 55%;
   width: 70%;
-}
-
-.details {
-  padding-left: 5px;
 }
 
 .cover-page {
@@ -193,6 +211,7 @@ nav .fas {
   height: 1.1em;
   margin-bottom: 8px;
 }
+
 .div3 p {
   font-family: "ARS Maquette", "Helvetica Neue", Arial, sans-serif;
   font-size: 13px;
@@ -276,7 +295,6 @@ nav .fas {
 .section-title {
   color: #f42;
   font-family: "Avalon", Helvetica, sans-serif;
-  font-weight: bolder;
   cursor: pointer;
   font-weight: 700;
   line-height: 31px;
@@ -431,7 +449,8 @@ nav .fas {
 }
 
 .topic {
-  background: transparent
+  background:
+    transparent
     url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png");
   left: 0;
   top: 0;
@@ -439,6 +458,25 @@ nav .fas {
   right: 0;
   position: absolute;
   background-size: 100% 100%;
+}
+
+.latest h3 {
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+/*
+.link h3 {
+  font-size: 16px;
+} */
+
+.link h3 {
+  height: min-content;
+  line-height: 1em;
+  padding: 0;
+  margin: 5px 0 0;
+  color: #555;
+  font-size: 15px;
 }
 
 .section3 .popular h3 {
@@ -460,22 +498,8 @@ nav .fas {
   padding: 5px 5px 0 15px;
 }
 
-.latest h3 {
-  margin: 0 auto;
-  font-size: 13px;
-}
-
 .latest-list {
   padding-left: 0;
-}
-
-.latest-list li {
-  color: #131313;
-  font-size: 14px;
-  font-weight: 400;
-  border-bottom: 1px solid #eee;
-  padding: 6px 0 6px 14px;
-  width: fit-content;
 }
 
 .section3 > * {
@@ -553,36 +577,9 @@ nav .fas {
   background-image: url("https://cdnp3.stackassets.com/91269f67479c8ba9b50a1afd8c9895a43faed8bb/store/68076d638abc4b1c252b05e65253424957f0ff9549c7bd37b82b975620a8/sale_27020_primary_image.jpg");
 }
 
-.image8 {
-  background-image: url("https://cdnp3.stackassets.com/a63f9a918b821c95e798a8a68ea959724b33b7f3/store/2730630ad405564dff3d69229e3fac86b328dee912982179d47815ed0e30/sale_22289_primary_image.jpg");
-}
-
-.link a {
-  background-color: #000;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  height: 0;
-  overflow: hidden;
-  padding-top: 100%;
-  width: 100%;
-  margin-bottom: 0;
-  position: relative;
-}
-
 .link p {
   padding: 0;
   margin: 0;
-}
-
-.link h3 {
-  height: min-content;
-  line-height: 1em;
-  padding: 0;
-  margin: 5px 0 0;
-  color: #555;
-  font-size: 15px;
 }
 
 .link h3 span {
@@ -612,37 +609,12 @@ nav .fas {
   margin-bottom: 20px;
 }
 
-.social-list li {
-  margin: 0 10px;
-}
-
-.social-list a {
-  background: #333;
-  border-radius: 50%;
-  display: block;
-  height: 40px;
-  padding: 12px;
-  text-align: center;
-  width: 40px;
-  color: white;
-}
-
 .bottom-social-list {
   display: flex;
   justify-content: center;
   font-size: 13px;
   font-weight: 500;
   line-height: 24px;
-  color: #aaa;
-}
-
-.bottom-social-list li {
-  margin: 0 5px;
-  font-family: Shentox, sans-serif;
-}
-
-.bottom-social-list a {
-  text-decoration: none;
   color: #aaa;
 }
 
@@ -653,12 +625,6 @@ nav .fas {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-}
-
-.last-footer span {
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
 }
 
 .footer-legal-logo {
@@ -750,15 +716,15 @@ b {
     font-weight: 600;
   }
 
-  .col1 .details p {
-    top: 80px;
-  }
-
   .col1 p {
     color: gray;
     font-size: 12px;
     font-weight: lighter;
     margin: 50px 5px;
+  }
+
+  .col1 .details p {
+    top: 80px;
   }
 
   .cover-page .col1 svg {
@@ -789,10 +755,6 @@ b {
   .col2 .details p {
     font-size: 12px;
     top: 30px;
-  }
-
-  .link a {
-    padding-top: 75%;
   }
 
   .section1 {
@@ -826,6 +788,40 @@ b {
 
   .section2-options {
     display: flex;
+  }
+
+  .image8 {
+    background-image: url("https://cdnp3.stackassets.com/a63f9a918b821c95e798a8a68ea959724b33b7f3/store/2730630ad405564dff3d69229e3fac86b328dee912982179d47815ed0e30/sale_22289_primary_image.jpg");
+  }
+
+  .link a {
+    background-color: #000;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    padding-top: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .bottom-social-list a {
+    text-decoration: none;
+    color: #aaa;
+  }
+
+  .social-list a {
+    background: #333;
+    border-radius: 50%;
+    display: block;
+    height: 40px;
+    padding: 12px;
+    text-align: center;
+    width: 40px;
+    color: white;
   }
 
   .section2-options span a {
@@ -880,8 +876,10 @@ b {
     width: 100%;
   }
 
-  .link h3 {
-    font-size: 16px;
+  .last-footer span {
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
   }
 
   .link h3 span {
