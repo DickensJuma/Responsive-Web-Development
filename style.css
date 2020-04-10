@@ -1,3 +1,4 @@
+@import url("href=https://fonts.googleapis.com/css2?family=Abel&display=swap");
 body {
   min-height: 100vh;
   color: #555;
@@ -34,8 +35,12 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.black-nav li,
 .left_links li {
+  margin: 0 1px;
+  cursor: pointer;
+}
+
+.black-nav li {
   margin: 0 10px;
   cursor: pointer;
   font-size: 13px;
@@ -86,9 +91,10 @@ nav ul li:hover {
   padding-right: 12px;
   text-decoration: none;
   color: #aaa;
-  letter-spacing: 1.5px;
-  font-family: "Teko", sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
 }
 
 .link_item:first-child {
