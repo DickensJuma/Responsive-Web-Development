@@ -36,7 +36,7 @@
     <a href="https://github.com/DickensJuma/Responsive-Web-Development"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://raw.githack.com/DickensJuma/Responsive-Web-Development/feature/index.html">View Demo</a>
+    <a href="https://raw.githack.com/DickensJuma/Responsive-Web-Development/improved/index.html">View Demo</a>
     ·
     <a href="https://github.com/DickensJuma/Responsive-Web-Development/issues">Report Bug</a>
     ·
@@ -85,7 +85,7 @@ This project was built using these technologies.
 <!-- LIVE VERSION -->
 ## Live version
 
-You can see it working [here](https://raw.githack.com/DickensJuma/Responsive-Web-Development/feature/index.html)
+You can see it working [here](https://raw.githack.com/DickensJuma/Responsive-Web-Development/improved/index.html)
 
 <!-- CONTACT -->
 ## Contributors
